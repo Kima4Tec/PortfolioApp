@@ -12,6 +12,7 @@ import { RouterOutlet, RouterModule } from '@angular/router';
     <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
     <li><a routerLink="/profile" routerLinkActive="active">Profil</a></li>
     <li><a routerLink="/contact" routerLinkActive="active">Kontakt</a></li>
+    <li><a routerLink="/admin" routerLinkActive="active">Admin</a></li>
   </ul>
 </nav>
 </header>
