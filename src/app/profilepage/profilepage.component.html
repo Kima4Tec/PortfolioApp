@@ -1,0 +1,39 @@
+<body class="hero">
+    <main *ngFor="let me of portfolios">
+
+        <h1>Profil:</h1>
+
+        <div class="container-top">
+
+            <p class="label">Navn: <span class="content">{{me.name}}</span></p>
+            <p class="label">Alder: <span class="content">{{me.age}} år</span></p>
+
+        </div>
+        <div class="container">
+            <div class="card-top">
+                <h2>Erfaring:</h2>
+                <p>{{me.experience}}</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <h2>Skills:</h2>
+                <div *ngFor="let skill of me.skillsArray">{{ skill }}</div>
+            </div>
+            <div class="card">
+                <h2>Uddannelse:</h2>
+                <p>{{me.education}}</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <h2>Projekter:</h2>
+                <p>{{me.projects}}</p>
+            </div>
+            <div class="card">
+                <h2>Interesser:</h2>
+                <p>{{me.interest}}</p>
+            </div>
+        </div>
+    </main>
+</body>
