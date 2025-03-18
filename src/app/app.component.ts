@@ -1,24 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet, RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterModule],
-  template: `
-  <main class="main">
-  <header>
-<nav>
-  <ul>
-    <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
-    <li><a routerLink="/profile" routerLinkActive="active">Profil</a></li>
-    <li><a routerLink="/contact" routerLinkActive="active">Kontakt</a></li>
-    <li><a routerLink="/admin" routerLinkActive="active">Admin</a></li>
-  </ul>
-</nav>
-</header>
-  </main>
-  <router-outlet></router-outlet>
-`,
+  imports: [RouterModule],
+  templateUrl: 'app.component.html', 
   styleUrl: './app.component.css'
 })
 export class AppComponent {

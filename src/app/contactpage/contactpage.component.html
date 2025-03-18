@@ -5,7 +5,7 @@
 
         <div class="container">
             <div class="card-top">
-                <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+                <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                     <!-- Navn -->
                     <div class="mb-3">
                         <label for="name" class="form-label">Navn:</label>
@@ -28,7 +28,7 @@
                     </div>
 
                     <!-- Send knap -->
-                    <button type="submit" class="btn btn-primary w-100" [disabled]="!contactForm.valid">Send</button>
+                    <button type="submit" class="btn btn-primary w-100">Send</button>
                 </form>
             </div>
         </div>
